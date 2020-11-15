@@ -1,0 +1,33 @@
+.body{
+    background: #E2E2E2;
+}
+
+.footer{
+    color: white;
+    background: #2B303A;
+}
+
+.main-header{
+    color: #747572;
+}
+
+.second-header{
+    color: #747572
+}
+
+.third-header{
+    color: #747572
+}
+
+.navigation{
+    background: #8895B3;
+}
+
+.navigation-link{
+    color: #FAA916;
+}
+
+footer a{
+    color: #FAA916;
+}
+
