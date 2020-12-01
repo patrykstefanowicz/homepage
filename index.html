@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTP: Co ten Patryk</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body class="body">
-    <header>
-        <nav class="navigation">
-            <a class="navigation-link" href="index.html">HOME</a>
-            <a class="navigation-link" href="html.html">HTML</a>
-            <a class="navigation-link" href="css.html">CSS</a>
-        </nav>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >HOME</a
+        >
+        <a class="navigation__link" href="html.html">HTML</a>
+        <a class="navigation__link" href="css.html">CSS</a>
+      </nav>
     </header>
 
-
     <main>
-        <header id="top">
-            <h1 class="main-header">Patryk Stefanowicz - strona domowa</h1>
-        </header>
+      <header id="top">
+        <h1 class="main-header">Patryk Stefanowicz - strona domowa</h1>
+      </header>
 
-        <section>
-            <h2 class="second-header">Kim jestem?</h2>
-            <img src="patryk-header.jpg" alt="Oto ja Patryk">
-            <p>Cześć, pracuję w firmie Malow, produkujemy szafy metalowe, stanowisko <b>technolog-programista</b>. Moja
-                praca polega na tworzeniu programów na różnego rodzaju szaf, ale nie tylko… <br />
-                również pisze programy na roboty typu FANUC, KUKA, HYUNDAI. <br />
-                Poza pracą, zajmuję się <i>fotografią</i> (uwielbiam robić zdjęcia) oraz nauką szkolenia <a
-                    href="https://cotenfrontend.pl/">WTF: Co ten frontend 2020</a> <a href="#notatki">Przejdź do notatek</a></p>
-        </section>
+      <section>
+        <h2 class="second-header">Kim jestem?</h2>
+        <img src="patryk-header.jpg" alt="Oto ja Patryk" />
+        <p>
+          Cześć, pracuję w firmie Malow, produkujemy szafy metalowe, stanowisko
+          <b>technolog-programista</b>. Moja praca polega na tworzeniu programów
+          na różnego rodzaju szaf, ale nie tylko… <br />
+          również pisze programy na roboty typu FANUC, KUKA, HYUNDAI. <br />
+          Poza pracą, zajmuję się <i>fotografią</i> (uwielbiam robić zdjęcia)
+          oraz nauką szkolenia
+          <a href="https://cotenfrontend.pl/">WTF: Co ten frontend 2020</a>
+          <a href="#notatki">Przejdź do notatek</a>
+        </p>
+      </section>
 
-        <section>
+      <section>
+        <h2 id="notatki" class="second-header">
+          Notatki z WTF: Co ten Frontend
+        </h2>
 
-            <h2 id="notatki" class="second-header">Notatki z WTF: Co ten Frontend</h2>
+        <article>
+          <h3 class="third-header">Tydzień I</h3>
+          <p>
+            1.Czym jest frontend? 2.Różnice w pracy na systemach Windows / Linux
+            / MacOS 3.Przedstawienie narzędzi 4.Ścieżka rozwoju 5.Mój pierwszy
+            projekt
+          </p>
+        </article>
 
-            <article>
-                <h3 class="third-header">Tydzień I</h3>
-                <p>1.Czym jest frontend?
-                    2.Różnice w pracy na systemach Windows / Linux / MacOS
-                    3.Przedstawienie narzędzi
-                    4.Ścieżka rozwoju
-                    5.Mój pierwszy projekt</p>
-            </article>
+        <article>
+          <h3 class="third-header">Tydzień II</h3>
+          <p>
+            1.Warstwy strony internetowej 2.HTML 3.CSS 4.Magia programowania
+            5.Devtools
+          </p>
+        </article>
 
-            <article>
-                <h3 class="third-header">Tydzień II</h3>
-                <p>1.Warstwy strony internetowej
-                    2.HTML
-                    3.CSS
-                    4.Magia programowania
-                    5.Devtools</p>
-            </article>
+        <article>
+          <h3 class="third-header">Tydzień III</h3>
+          <p>
+            1.Kanban 2.Atrybuty w HTML 3.Klasy CSS 4.Jak działa internet i
+            przeglądarka 5.JavaScript 6.Terminal
+          </p>
+        </article>
 
-            <article>
-                <h3 class="third-header">Tydzień III</h3>
-                <p>1.Kanban
-                    2.Atrybuty w HTML
-                    3.Klasy CSS
-                    4.Jak działa internet i przeglądarka
-                    5.JavaScript
-                    6.Terminal</p>
-            </article>
-
-        </section>
-
-
+        <article>
+          <h3 class="third-header">Tydzień IV</h3>
+          <p>
+            1.GIT 2.GITHub 3.CSS: display,wymiary,overflow,jednostki,box
+            model(padding/border/margin),box-sizing,position,z-index,float,
+            4.JavaScript: typy danych i immutabillity(let/const/var),
+            5.Formatowanie kodu i lokalny server, 6.BEM-block element modifier,
+            7.DOM-document object model
+          </p>
+        </article>
+      </section>
     </main>
 
     <footer class="footer">
-        Strona domowa Patryka Stefanowicza, wszystko tworzone jest pod program szkoleniowy. <a href="#top">Wróć na górę
-            strony</a>
+      Strona domowa Patryka Stefanowicza, wszystko tworzone jest pod program
+      szkoleniowy. <a href="#top">Wróć na górę strony</a>
     </footer>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
