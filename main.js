@@ -18,9 +18,18 @@ emptyParagraph.innerHTML = `dopisane za pomocą JavaScriptu`;
 
 function calculate(myNumber) {
   console.log(`Dostałem ${myNumber}`);
-  return myNumber * 7;
+  myNumber = myNumber*7;
+  return `wynik ${myNumber}`;
 }
 
 const myResult = calculate(2);
 
 console.log(myResult);
+
+function greet (firstName, age){
+console.log(`Siema, nazywam się ${firstName} oraz mam ${age} lat.`);
+}
+greet(firstName,age)
+
+
+
