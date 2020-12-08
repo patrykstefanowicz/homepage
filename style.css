@@ -1,33 +1,23 @@
-.navigation {
-  background: #8895b3;
-  border-radius: 6px;
-  padding: 2px;
+.about{
+
 }
 
-.navigation__link {
-  color: #fff;
-  display: inline-block;
-  margin: 2px 15px;
-}
+.about__description{
 
-.navigation__link--homepage {
-    color: yellow;
-    background: black;
 }
 
 
+.about__heading{
 
-
-.main-header {
-  color: #747572;
 }
 
-.second-header {
-  color: #747572;
+.about__link{
+
 }
 
-.third-header {
-  color: #747572;
+.about__picture{
+  
+  
 }
 
 
@@ -37,8 +27,77 @@
 .footer {
   color: white;
   background: #2b303a;
+  max-width: 1000px;
+    margin: 0 auto;
 }
 
-footer a {
+.footer__link {
   color: #faa916;
 }
+
+.header{
+
+}
+
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main__header{
+  color: rgb(37, 61, 141);
+  padding-top: 10px;
+}
+
+.main__heading{
+  color: rgb(37, 61, 141);
+}
+
+
+
+.notes{
+
+}
+
+.notes__heading{
+
+}
+
+.navigation {
+  background: rgb(136, 149, 179, 0.8);
+  padding: 0 30px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  position: fixed;
+  top: 2px;
+}
+
+.navigation__link {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.navigation__link--homepage {
+  color: yellow;
+  background: black;
+}
+
+.week-summary {
+  padding: 10px;
+  border: 2px solid rgb(163, 153, 10);
+  margin-bottom: 15px;
+}
+
+.week-summary--special {
+  border: 5px solid rgb(134, 0, 0);
+}
+
+.week-summary__title {
+  color: rgb(223, 58, 8);
+}
+
+.week-summary__description {
+  color: rgb(185, 9, 9);
+}
+

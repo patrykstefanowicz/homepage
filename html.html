@@ -7,53 +7,64 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body class="body">
-    <header>
+  <body>
+    <header class="header">
       <nav class="navigation">
-        <a class="navigation-link" href="index.html">HOME</a>
-        <a class="navigation-link" href="html.html">HTML</a>
-        <a class="navigation-link" href="css.html">CSS</a>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >HOME</a
+        >
+        <a class="navigation__link" href="html.html">HTML</a>
+        <a class="navigation__link" href="css.html">CSS</a>
       </nav>
     </header>
 
-    <main>
-      <header id="top">
-        <h1 class="main-header">Przydatne linki</h1>
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 class="main__heading">Przydatne linki</h1>
       </header>
-      <img src="logo-html.jpg" alt="logo-html" />
-      <section>
-        <article>
-          <h3 class="third-header">Tydzień I</h3>
-          <p>1.<a href="https://roadmap.sh">Roadmap</a></p>
+      <img class="main_picture" src="logo-html.jpg" alt="logo-html" />
+
+
+      <section class="notes">
+        
+        <article class="week-summary">
+          <h3 class="week-summary__title">Tydzień I</h3>
+          <p class="week-summary__description">
+            1.<a class="week-summary__link" href="https://roadmap.sh">Roadmap</a>
+          </p>
         </article>
 
-        <article>
-          <h3 class="third-header">Tydzień II</h3>
-          <p>
-            1.<a href="https://validator.w3.org/nu/#textarea">Validator</a> 2.<a
-              href="https://www.w3.org/TR/html52/"
+        <article class="week-summary">
+          <h3 class="week-summary__title">Tydzień II</h3>
+          <p class="week-summary__description">
+            1.<a
+              class="week-summary__link"
+              href="https://validator.w3.org/nu/#textarea"
+              >Validator</a
+            >
+            2.<a class="week-summary__link" href="https://www.w3.org/TR/html52/"
               >HTML5.2</a
             >
           </p>
         </article>
 
-        <article>
-          <h3 class="third-header">Tydzień III</h3>
-          <p>
-            1.<a href="https://trello.com">Trello</a> 2.<a
+        <article class="week-summary">
+          <h3 class="week-summary__title">Tydzień III</h3>
+          <p class="week-summary__description">
+            1.<a class="week-summary__link" href="https://trello.com">Trello</a>
+            2.<a
+              class="week-summary__link"
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
               >HTML-Global attributes</a
             >
           </p>
         </article>
 
-        <article>
-          <h3 class="third-header">Tydzień IV</h3>
-          <p>
-            1.<a href="https://git-scm.com">GIT</a> 2.<a
-              href="https://github.com"
-              >GITHub</a
-            >
+        <article class="week-summary">
+          <h3 class="week-summary__title">Tydzień IV</h3>
+          <p class="week-summary__description">
+            1.<a class="week-summary__link" href="https://git-scm.com">GIT</a>
+            2.<a class="week-summary__link" href="https://github.com">GITHub</a>
           </p>
         </article>
       </section>
@@ -61,7 +72,7 @@
 
     <footer class="footer">
       Strona domowa Patryka Stefanowicza, wszystko tworzone jest pod program
-      szkoleniowy. <a href="#top">Wróć na górę strony</a>
+      szkoleniowy. <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
 
     <script src="main.js"></script>
