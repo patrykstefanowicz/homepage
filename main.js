@@ -7,29 +7,95 @@ console.log(age);
 console.log(`Siema, nazywam się ${firstName} oraz mam ${age} lat.`);
 
 const heading = document.querySelector(".main__heading--js");
-
 console.log(heading);
-
 heading.innerHTML = `Coś tam się udało za pomocą querySelectora`;
 
 const emptyParagraph = document.querySelector(".about__description--js");
-
 emptyParagraph.innerHTML = `dopisane za pomocą JavaScriptu`;
+
+function createContent(querySelectorContent, content) {
+  const element = document.querySelector(querySelectorContent);
+  element.innerHTML = content;
+}
+createContent(".notes__heading--js", "Siema siema, tutaj dni tygodnia");
+
+createContent(".about__description--js", "dopisane za pomocą JavaScriptu");
 
 function calculate(myNumber) {
   console.log(`Dostałem ${myNumber}`);
-  myNumber = myNumber*7;
+  myNumber = myNumber * 7;
   return `wynik ${myNumber}`;
 }
-
 const myResult = calculate(2);
-
 console.log(myResult);
 
-function greet (firstName, age){
-console.log(`Siema, nazywam się ${firstName} oraz mam ${age} lat.`);
+function greetOld(firstName, age) {
+  console.log(`Siema, nazywam się ${firstName} oraz mam ${age} lat.`);
 }
-greet(firstName,age)
+greetOld(firstName, age);
+
+function helloWorld() {
+  console.log("Witaj świecie");
+}
+helloWorld();
+
+const greet = (age, firstName) => {
+  console.log(`Siema, nazywam się ${firstName} oraz mam ${age} lat.`);
+};
+greet(25, "Patryk");
+
+const deathStar = {
+  diameter: 120000,
+  fire: (target) => {
+    console.log(`${target} destroyed`);
+  },
+  isOperation: true,
+  levels: 357,
+  name: "Death Star",
+  population: 10000,
+  commander: {
+    name: "Death Vader",
+    age: 44,
+  },
+};
+console.log(deathStar);
+
+console.log(console);
+
+console.log(typeof deathStar);
+console.log(typeof deathStar.name);
+
+deathStar.fire("Rebel ship");
+console.log(deathStar.commander.age);
+console.log(deathStar["diameter"]);
+
+const myProperty = "name";
+const showMeProperty = (myProperty) => {
+  console.log(`Twoja własność ${myProperty} to: ${deathStar[myProperty]}`);
+};
+
+showMeProperty("levels");
+
+const humanOne = {
+  name: "Patryk",
+  age: 25,
+  address: {
+    street: 'Pułaskiego',
+    city: 'Suwałki'
+  }
+};
+
+const humanTwo = {
+  name: "Stefan",
+  age: 26,
+  address: {
+    street: 'Pułaskiego',
+    city: 'Suwałki'
+  }
+};
+
+humanOne.address.city = 'Białystok';
 
 
-
+console.log(humanOne);
+console.log(humanTwo);
