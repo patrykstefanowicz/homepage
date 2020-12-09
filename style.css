@@ -1,3 +1,12 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+
 .about{
 
 }
@@ -64,13 +73,13 @@
 }
 
 .navigation {
-  background: rgb(136, 149, 179, 0.8);
+  background: rgb(136, 149, 179, 0.4);
   padding: 0 30px;
   width: 100%;
   right: 0;
   left: 0;
   position: fixed;
-  top: 2px;
+  
 }
 
 .navigation__link {
@@ -81,6 +90,11 @@
 .navigation__link--homepage {
   color: yellow;
   background: black;
+}
+
+
+.table{
+  width: 100%;
 }
 
 .week-summary {
