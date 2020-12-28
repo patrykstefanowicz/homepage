@@ -30,7 +30,9 @@ html{
 }
 
 
-
+body{
+  background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(33,107,194,1) 100%);
+}
 
 
 .footer {
@@ -55,10 +57,11 @@ html{
 
 .main__header{
   color: rgb(37, 61, 141);
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .main__heading{
+  padding-top: 50px;
   color: rgb(37, 61, 141);
 }
 
@@ -74,10 +77,9 @@ html{
 
 .navigation {
   background: rgb(136, 149, 179, 0.4);
-  padding: 0 30px;
+  padding: 20px 30px;
   width: 100%;
-  right: 0;
-  left: 0;
+  
   position: fixed;
   
 }
