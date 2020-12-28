@@ -99,3 +99,27 @@ humanOne.address.city = 'Białystok';
 
 console.log(humanOne);
 console.log(humanTwo);
+
+
+if (humanOne.age > humanTwo.age) {
+  console.log ('HumanOne jest starszy')
+}
+else if (humanOne.age == humanTwo.age) {
+  console.log ('są równolatkami')
+}
+else console.log ('HumanTwo jest starszy')
+
+
+const myNumber = 4;
+
+switch (myNumber) {
+  case 4:
+  console.log ('to jest liczba 4');
+  break;
+  case 6:
+  console.log ('to jest liczba 6');
+  break;
+  default: 
+  console.log ('inna liczba niż wybrana');
+}
+
