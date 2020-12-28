@@ -31,7 +31,7 @@ html{
 
 
 body{
-  background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(33,107,194,1) 100%);
+  background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(25,32,40,1) 100%);
 }
 
 
@@ -39,7 +39,7 @@ body{
   color: white;
   background: #2b303a;
   max-width: 1000px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .footer__link {
@@ -79,14 +79,14 @@ body{
   background: rgb(136, 149, 179, 0.4);
   padding: 20px 30px;
   width: 100%;
-  
   position: fixed;
-  
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__link {
   color: #fff;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .navigation__link--homepage {
