@@ -41,14 +41,25 @@ body {
   color: white;
   background: #2b303a;
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 60px auto 0;
 }
 
 .footer__link {
   color: #faa916;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
 
+.grid__element{
+  display: flex;
+  justify-content: center;
+  background: yellow;
+}
 
 .main {
   max-width: 1000px;
@@ -103,7 +114,7 @@ body {
 }
 
 .navigation__link--homepage {
-  color: pink;
+  color: rgb(138, 11, 32);
 }
 
 .table {
@@ -140,5 +151,12 @@ body {
   }
   .hamburger{
     display: none;
+  }
+
+  .footer{
+    margin: 60px 0 20px 5px;
+    display: flex;
+   justify-content: center;
+   background: none;
   }
 }
