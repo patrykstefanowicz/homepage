@@ -1,101 +1,112 @@
-html{
+html {
   box-sizing: border-box;
 }
 
-*,*:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-
-.about{
-
+.about {
 }
 
-.about__description{
-
+.about__description {
 }
 
-
-.about__heading{
-
+.about__heading {
 }
 
-.about__link{
-
+.about__link {
 }
 
-.about__picture{
-  
-  
+.about__picture {
+  display: block;
+  max-width: 100%;
+}
+.main__picture {
+  display: block;
+  max-width: 100%;
 }
 
-
-body{
-  background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(25,32,40,1) 100%);
+body {
+  background: radial-gradient(
+    circle,
+    rgba(247, 242, 244, 1) 0%,
+    rgba(25, 32, 40, 1) 100%
+  );
 }
-
 
 .footer {
   color: white;
   background: #2b303a;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
 .footer__link {
   color: #faa916;
 }
 
-.header{
 
+
+.main {
+  max-width: 1000px;
+  margin: 30px auto 0;
 }
 
-.main{
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.main__header{
+.main__header {
   color: rgb(37, 61, 141);
   padding-top: 30px;
 }
 
-.main__heading{
+.main__heading {
   padding-top: 50px;
   color: rgb(37, 61, 141);
 }
 
-
-
-.notes{
-
+.notes {
 }
 
-.notes__heading{
+.notes__heading {
+}
 
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  background: #fff;
 }
 
 .navigation {
-  background: rgb(136, 149, 179, 0.4);
-  padding: 20px 30px;
   width: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: center;
+  display: none;
+  
+}
+
+.navigation--open {
+  display: block;
+}
+
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 .navigation__link {
-  color: #fff;
-  margin-right: 60px;
+  color: rgb(31, 30, 30);
+  margin: 0 60px 16px 2px;
+  display: block;
+  text-decoration: none;
 }
 
 .navigation__link--homepage {
-  color: yellow;
-  background: black;
+  color: pink;
 }
 
-
-.table{
+.table {
   width: 100%;
 }
 
@@ -117,3 +128,17 @@ body{
   color: rgb(185, 9, 9);
 }
 
+@media (min-width: 768px) {
+  .navigation {
+    background: rgb(136, 149, 179, 0.4);
+    padding: 20px 30px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  .hamburger{
+    display: none;
+  }
+}
