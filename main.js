@@ -80,46 +80,51 @@ const humanOne = {
   name: "Patryk",
   age: 25,
   address: {
-    street: 'Pułaskiego',
-    city: 'Suwałki'
-  }
+    street: "Pułaskiego",
+    city: "Suwałki",
+  },
 };
 
 const humanTwo = {
   name: "Stefan",
   age: 26,
   address: {
-    street: 'Pułaskiego',
-    city: 'Suwałki'
-  }
+    street: "Pułaskiego",
+    city: "Suwałki",
+  },
 };
 
-humanOne.address.city = 'Białystok';
-
+humanOne.address.city = "Białystok";
 
 console.log(humanOne);
 console.log(humanTwo);
 
-
 if (humanOne.age > humanTwo.age) {
-  console.log ('HumanOne jest starszy')
-}
-else if (humanOne.age == humanTwo.age) {
-  console.log ('są równolatkami')
-}
-else console.log ('HumanTwo jest starszy')
-
+  console.log("HumanOne jest starszy");
+} else if (humanOne.age == humanTwo.age) {
+  console.log("są równolatkami");
+} else console.log("HumanTwo jest starszy");
 
 const myNumber = 4;
 
 switch (myNumber) {
   case 4:
-  console.log ('to jest liczba 4');
-  break;
+    console.log("to jest liczba 4");
+    break;
   case 6:
-  console.log ('to jest liczba 6');
-  break;
-  default: 
-  console.log ('inna liczba niż wybrana');
+    console.log("to jest liczba 6");
+    break;
+  default:
+    console.log("inna liczba niż wybrana");
 }
 
+const button = document.querySelector(".action--js");
+
+
+const myClick = () => {
+  console.log("kliknąłeś");
+  const about = document.querySelector(".about__heading--js");
+  about.innerHTML = `Kim jednak Ty jesteś?`;
+}
+
+button.addEventListener('click', myClick);
