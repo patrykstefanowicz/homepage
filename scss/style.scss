@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.about {
+  &__description {
+    margin: 0;
+    font-size: 17px;
+  }
+  &__description--js {
+    margin-top: 16px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+  &__grid {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+  }
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(247, 242, 244, 1) 0%,
+    rgba(25, 32, 40, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  color: white;
+  background: #2b303a;
+  max-width: 1000px;
+  margin: 60px auto 0;
+  &__link {
+    color: #faa916;
+  }
+}
+
+.main {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+  &__header {
+    color: rgb(37, 61, 141);
+    padding-top: 30px;
+  }
+  &__heading {
+    padding-top: 30px;
+    color: rgb(37, 61, 141);
+  }
+}
+
+.notes {
+  margin-top: 30px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  background: #fff;
+}
+
+.navigation {
+  width: 100%;
+  display: none;
+  @media (min-width: 768px) {
+    .navigation {
+      background: rgb(136, 149, 179, 0.4);
+      padding: 20px 30px;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      text-decoration: none;
+    }
+  }
+
+  &--open {
+    display: block;
+  }
+  &__link {
+    color: rgb(31, 30, 30);
+    margin: 0 60px 16px 2px;
+    display: block;
+    text-decoration: none;
+    &__:hover {
+      transform: scale(1.2);
+      border: 2px solid rgb(41, 40, 40);
+    }
+    &--homepage {
+      color: rgb(138, 11, 32);
+    }
+  }
+}
+
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .week-summary {
+    padding: 10px;
+    border: 2px solid rgb(163, 153, 10);
+    margin-bottom: 15px;
+    &__--special {
+      border: 5px solid rgb(134, 0, 0);
+    }
+    &__title {
+      color: rgb(223, 58, 8);
+      &__::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: yellow;
+      }
+    }
+    &__description {
+      color: rgb(185, 9, 9);
+      &::after {
+        content: "Hello";
+        width: 10px;
+        height: 10px;
+        background: yellow;
+      }
+    }
+  }
+
+  .grid {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+
+    &__element {
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        background: yellow;
+      }
+    }
+  }
+}
